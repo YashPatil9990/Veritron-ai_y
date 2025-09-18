@@ -80,10 +80,10 @@ export default function Docs() {
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: 0.2 }}
             >
-              Satya Check AI Documentation
+              Veritron AI Documentation
             </motion.h1>
             <p className="text-gray-600 text-lg max-w-2xl mx-auto">
-              Complete technical documentation and guide for the Satya Check AI
+              Complete technical documentation and guide for the Veritron AI
               Chrome extension
             </p>
           </div>
@@ -98,7 +98,7 @@ export default function Docs() {
                 </h2>
                 <div className="space-y-4">
                   <p className="text-gray-600 text-lg leading-relaxed">
-                    Satya Check AI is an advanced Chrome extension designed to
+                    Veritron AI is an advanced Chrome extension designed to
                     combat misinformation and propaganda in web content.
                     Leveraging Google's Gemini AI technology, it provides
                     real-time analysis of web pages, helping users verify the

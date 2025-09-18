@@ -22,7 +22,7 @@ const PrivacyPolicy = () => {
           <Lock className="h-8 w-8 text-blue-600" />
         </div>
         <h1 className="text-4xl font-bold mb-4 bg-gradient-to-r from-blue-600 to-blue-400 bg-clip-text text-transparent">
-          Privacy Policy for SatyaCheck Extension
+          Privacy Policy for Veritron Extension
         </h1>
         <p className="text-gray-600 text-lg max-w-2xl mx-auto">
           Your privacy is our top priority. Learn how we protect your data while making the internet a more trustworthy place.
@@ -38,7 +38,7 @@ const PrivacyPolicy = () => {
             <h2 className="text-2xl font-semibold text-gray-900">Introduction</h2>
           </div>
           <p className="text-gray-600 leading-relaxed">
-            This Privacy Policy explains how SatyaCheck ("we", "our", or "us") collects, uses, and protects your information
+            This Privacy Policy explains how Veritron ("we", "our", or "us") collects, uses, and protects your information
             when you use our Chrome extension. We are committed to ensuring that your privacy is protected while providing you
             with powerful fact-checking capabilities.
           </p>
@@ -51,7 +51,7 @@ const PrivacyPolicy = () => {
             </div>
             <h2 className="text-2xl font-semibold text-gray-900">Information We Collect</h2>
           </div>
-          <p className="text-gray-600 mb-4">We collect the following types of information when you use the SatyaCheck extension:</p>
+          <p className="text-gray-600 mb-4">We collect the following types of information when you use the Veritron extension:</p>
           <ul className="space-y-3">
             {[
               'Text content from web pages you analyze',
@@ -164,4 +164,4 @@ const PrivacyPolicy = () => {
   );
 };
 
-export default PrivacyPolicy; 
+export default PrivacyPolicy;

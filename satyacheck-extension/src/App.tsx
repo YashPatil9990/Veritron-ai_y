@@ -139,7 +139,7 @@ export default function App() {
                     />
                   </svg>
                 </motion.div>
-                Satya Check AI
+                Veritron AI
               </div>
               <Badge
                 variant="secondary"

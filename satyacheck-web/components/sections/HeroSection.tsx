@@ -47,7 +47,7 @@ const HeroSection = () => {
         isOpen={isPopupOpen}
         onClose={() => setIsPopupOpen(false)}
         title="Extension Under Review"
-        message="The SatyaCheck extension is currently under review by the Chrome Web Store. We're working hard to make it available to you soon. Thank you for your patience and interest in fighting misinformation!"
+        message="The Veritron extension is currently under review by the Chrome Web Store. We're working hard to make it available to you soon. Thank you for your patience and interest in fighting misinformation!"
       />
 
       {/* Background elements */}
@@ -88,7 +88,7 @@ const HeroSection = () => {
             className="relative group"
           >
             <Badge className="bg-blue-100 text-blue-600 hover:bg-blue-200 mb-6 px-4 py-1.5 shadow-sm transition-all duration-300 group-hover:shadow-md group-hover:-translate-y-0.5">
-              Welcome to SatyaCheck
+              Welcome to Veritron
             </Badge>
           </motion.div>
 
@@ -133,7 +133,7 @@ const HeroSection = () => {
             variants={fadeIn("up", "spring", 0.8, 1)}
             className="text-lg md:text-xl text-gray-600 mb-12 max-w-2xl leading-relaxed"
           >
-            Satyacheck AI helps you identify and counter political propaganda
+            Veritron AI helps you identify and counter political propaganda
             and misinformation with
             <span className="text-blue-600 font-medium">
               {" "}

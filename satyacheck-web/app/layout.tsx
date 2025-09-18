@@ -9,7 +9,7 @@ import Script from "next/script";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "Satyacheck AI - Combat Political Misinformation in India",
+  title: "Veritron AI - Combat Political Misinformation in India",
   description:
     "Real-time political propaganda detection to combat misinformation in India's online landscape",
 };
