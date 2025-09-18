@@ -42,7 +42,7 @@ const HowitWorks = () => {
         >
           <div className="inline-block relative mb-4">
             <h2 className="text-2xl md:text-3xl font-bold text-gray-900 relative z-10">
-              How <span className="text-blue-600">Satyacheck AI</span> Works
+              How <span className="text-blue-600">Veritron AI</span> Works
             </h2>
             <div className="absolute -inset-1 bg-blue-100 rounded-full blur-xl opacity-30 -z-10"></div>
           </div>

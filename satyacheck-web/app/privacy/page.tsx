@@ -2,8 +2,8 @@ import React from 'react';
 import PrivacyPolicy from '@/components/PrivacyPolicy';
 
 export const metadata = {
-  title: 'Privacy Policy - SatyaCheck',
-  description: 'Privacy Policy for the SatyaCheck Chrome extension - Learn how we handle and protect your data.',
+  title: 'Privacy Policy - Veritron',
+  description: 'Privacy Policy for the Veritron Chrome extension - Learn how we handle and protect your data.',
 };
 
 export default function PrivacyPage() {
@@ -12,4 +12,4 @@ export default function PrivacyPage() {
       <PrivacyPolicy />
     </main>
   );
-} 
+}

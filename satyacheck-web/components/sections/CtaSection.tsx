@@ -31,7 +31,7 @@ const CtaSection = () => {
         isOpen={isPopupOpen}
         onClose={() => setIsPopupOpen(false)}
         title="Extension Under Review"
-        message="The SatyaCheck extension is currently under review by the Chrome Web Store. We're working hard to make it available to you soon. Thank you for your patience and interest in fighting misinformation!"
+        message="The Veritron extension is currently under review by the Chrome Web Store. We're working hard to make it available to you soon. Thank you for your patience and interest in fighting misinformation!"
       />
 
       <div className="bg-gradient-to-r from-blue-700 via-blue-600 to-blue-500 rounded-2xl p-10 md:p-14 shadow-xl overflow-hidden relative group">

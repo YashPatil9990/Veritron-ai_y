@@ -21,9 +21,9 @@ export default function Footer() {
             <div className="flex items-center gap-2 mb-4 group">
               <Shield className="h-6 w-6 text-blue-600 transition-transform duration-300 group-hover:rotate-12" />
               <span className="font-bold text-xl text-gray-900">
-                Satya
+                Veri
                 <span className="text-blue-600 relative">
-                  check
+                  tron
                   <span className="absolute -bottom-1 left-0 w-full h-0.5 bg-blue-600 scale-x-0 group-hover:scale-x-100 transition-transform origin-left duration-300"></span>
                 </span>
               </span>
@@ -65,7 +65,7 @@ export default function Footer() {
               Privacy
             </Link>
           </div>
-          <p className="text-blue-600">© {new Date().getFullYear()} Satyacheck AI. All rights reserved.</p>
+          <p className="text-blue-600">© {new Date().getFullYear()} Veritron AI. All rights reserved.</p>
         </div>
       </div>
     </footer>

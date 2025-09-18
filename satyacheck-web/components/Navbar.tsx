@@ -65,9 +65,9 @@ export default function Navbar() {
           <div className="absolute -inset-2 bg-blue-100 rounded-full opacity-0 group-hover:opacity-100 transition-opacity duration-300 blur-md -z-10"></div>
           <Shield className="h-6 w-6 text-blue-600 transition-transform duration-300 group-hover:rotate-12" />
           <span className="font-bold text-xl text-gray-900">
-            Satya
+            Veri
             <span className="text-blue-600 relative">
-              check
+              tron
               <span className="absolute -bottom-1 left-0 w-full h-0.5 bg-blue-600 scale-x-0 group-hover:scale-x-100 transition-transform origin-left duration-300"></span>
             </span>
           </span>

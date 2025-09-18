@@ -222,7 +222,7 @@ export default function Home() {
         <NewsSection news={news} />
       </section>
 
-      {/* How Satyacheck AI Works */}
+      {/* How Veritron AI Works */}
       <section id="how-it-works">
         <HowItWorks />
       </section>
