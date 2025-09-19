@@ -20,7 +20,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en">
+    <html lang="en" suppressHydrationWarning>
       <body className={inter.className}>
         <ThemeProvider
           attribute="class"
@@ -31,7 +31,7 @@ export default function RootLayout({
           {children}
           <Script
               defer
-              data-domain="satya-check.vercel.app" // Replace with your domain
+              data-domain="" // Replace with your domain
               src="https://analytics-code.vercel.app/tracking-script.js"
           />
           <Toaster />

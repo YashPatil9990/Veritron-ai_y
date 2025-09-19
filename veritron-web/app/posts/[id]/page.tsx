@@ -83,7 +83,7 @@ export default function PostDetailPage() {
           .from("user")
           .select("*")
           .eq("id", user.id)
-          .single();
+          .maybeSingle();
         console.log(userData);
         setCurrentUser(userData);
       }
@@ -99,10 +99,16 @@ export default function PostDetailPage() {
       try {
         // Fetch the news item from Supabase
         const { data, error } = await supabase
-          .from("news")
-          .select("*")
-          .eq("id", id)
-          .single();
+  .from("news")
+  .select(`
+  *,
+  user:user_id(id, name, avatar),
+  comments(id, text, likes, created_at, user:user_id(id, name, avatar))
+`)
+  .eq("id", id)
+  .maybeSingle();
+
+
 
         if (error) {
           throw error;
@@ -124,6 +130,7 @@ export default function PostDetailPage() {
             title: data.title || "News Verification Report", // Default title
             image: data.image || "/fact-check-default.jpg", // Default image
             url: data.url || null,
+              votes: data.votes || [],
           };
 
           setPost(postData);
@@ -140,8 +147,8 @@ export default function PostDetailPage() {
         }
 
         setLoading(false);
-      } catch (error) {
-        console.error("Error fetching post:", error);
+      } catch (error: any) {
+        console.error("Error fetching post:", error?.message ?? error);
         setLoading(false);
       }
     };
@@ -371,19 +378,17 @@ export default function PostDetailPage() {
         <div className="flex items-center justify-between mb-4">
           <Badge
             className={`
-              ${
-                post.subject_expertise
-                  ? "bg-blue-100 text-blue-700"
-                  : "bg-gray-100 text-gray-700"
+              ${post.subject_expertise
+                ? "bg-blue-100 text-blue-700"
+                : "bg-gray-100 text-gray-700"
               } py-1 px-3 text-sm`}
           >
             {post.subject_expertise || "Uncategorized"}
           </Badge>
 
           <div
-            className={`rounded-full px-3 py-1 text-xs font-medium text-white shadow-md ${
-              isVerified ? "bg-green-500" : "bg-red-500"
-            }`}
+            className={`rounded-full px-3 py-1 text-xs font-medium text-white shadow-md ${isVerified ? "bg-green-500" : "bg-red-500"
+              }`}
           >
             {isVerified ? (
               <div className="flex items-center">
@@ -438,9 +443,8 @@ export default function PostDetailPage() {
         </div>
         <div className="absolute inset-0 bg-gradient-to-t from-black/40 to-transparent"></div>
         <div
-          className={`absolute bottom-4 left-4 ${
-            isVerified ? "bg-green-600" : "bg-red-600"
-          } text-white px-3 py-1 rounded-full text-sm font-medium flex items-center`}
+          className={`absolute bottom-4 left-4 ${isVerified ? "bg-green-600" : "bg-red-600"
+            } text-white px-3 py-1 rounded-full text-sm font-medium flex items-center`}
         >
           {isVerified ? (
             <>
